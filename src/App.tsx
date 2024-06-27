@@ -10,7 +10,7 @@ function App() {
           <img src={coffeeLogo} className="logo coffee-logo" alt="coffee" />
           <img src={catLogo} className="logo cat-logo" alt="cat" />
       </div>
-      <h1>Meow Meow Cafe</h1>
+      <h1>Cafe Meow Meow</h1>
     </>
   )
 }
