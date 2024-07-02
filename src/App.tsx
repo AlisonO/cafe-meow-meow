@@ -4,7 +4,7 @@ import coffeeLogo from './assets/coffee.svg'
 import './App.css'
 
 function App() {
-  const [menu, setMenu] = useState<String>('');
+  const [menu, setMenu] = useState<any>();
 
   useEffect(() => {
     const getMenu = async () => {
@@ -23,7 +23,7 @@ function App() {
           <img src={catLogo} className="logo cat-logo" alt="cat" />
       </div>
       <h1>Cafe Meow Meow</h1>
-      <p>{menu}</p>
+      <p>{menu ? menu.response : null}</p>
     </>
   )
 }
