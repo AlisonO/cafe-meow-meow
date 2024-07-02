@@ -23,7 +23,7 @@ function App() {
           <img src={catLogo} className="logo cat-logo" alt="cat" />
       </div>
       <h1>Cafe Meow Meow</h1>
-      <p>{menu}</p>
+      <p>{JSON.stringify(menu)}</p>
     </>
   )
 }
