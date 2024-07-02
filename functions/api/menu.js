@@ -3,5 +3,5 @@ export async function onRequest(context) {
   
     const answer = await context.env.Baristas.run('@cf/meta/llama-3-8b-instruct', input);
   
-    return Response.json(answer);
+    return Response.json(answer).body.response;
 }
